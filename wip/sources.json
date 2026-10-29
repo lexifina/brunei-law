@@ -1,0 +1,43 @@
+{
+  "publisher": "Attorney General's Chambers, Brunei Darussalam (www.agc.gov.bn)",
+  "acts": [
+    {
+      "slug": "constitution",
+      "page": "https://www.agc.gov.bn/documents/constitutional-matters-i-constitution-of-brunei-darussalam/",
+      "editions": [
+        {"label": "1984 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CONST.-I-1984-ED-CONSTITUTION-OF-BRUNEI-DARUSSALAM.pdf"},
+        {"label": "2004 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CONST.-I-2004-ED-CONSTITUTION-OF-BRUNEI-DARUSSALAM.pdf"},
+        {"label": "2011 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CONST.-I-2011-ED-CONSTITUTION-OF-BRUNEI-DARUSSALAM.pdf"},
+        {"label": "2022 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CONST.-I-2022-ED-CONSTITUTION-OF-BRUNEI-DARUSSALAM.pdf"}
+      ],
+      "orders": [
+        {"label": "S 22/2021", "url": "https://www.agc.gov.bn//wp-content/uploads/2026/07/S-22-2021-CONSTITUTION-OF-BRUNEI-DARUSALAM-AMENDMENT-ORDER-2021.pdf"},
+        {"label": "S 42/2024", "url": "https://www.agc.gov.bn//wp-content/uploads/2026/07/S-42-2024-CONSTITUTION-OF-BRUNEI-DARUSALAM-AMENDMENT-ORDER-2024.pdf"}
+      ]
+    },
+    {
+      "slug": "penal-code",
+      "page": "https://www.agc.gov.bn/documents/penal-code/",
+      "editions": [
+        {"label": "1984 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-22-1984-ED-E-PENAL-CODE-ACT.pdf"},
+        {"label": "2001 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-22-2001-ED-E-PENAL-CODE-ACT.pdf"},
+        {"label": "2016 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-22-2016-ED-E-PENAL-CODE-ACT.pdf"},
+        {"label": "2021 Ed.", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-22-2021-ED-E-PENAL-CODE-ACT.pdf"}
+      ],
+      "orders": [
+        {"label": "S 61/2017", "url": "https://www.agc.gov.bn//wp-content/uploads/2026/07/S-61-2017-E-PENAL-CODE-AMENDMENT-ORDER-2017.pdf"},
+        {"label": "S 60/2018", "url": "https://www.agc.gov.bn//wp-content/uploads/2026/07/S-60-2018-E-PENAL-CODE-AMENDMENT-ORDER-2018.pdf"},
+        {"label": "S 71/2018", "url": "https://www.agc.gov.bn//wp-content/uploads/2026/07/S-71-2018-E-PENAL-CODE-AMENDMENT-NO.-2-ORDER-2018.pdf"},
+        {"label": "S 38/2021", "url": "https://www.agc.gov.bn//wp-content/uploads/2026/07/S-38-2021-E-PENAL-CODE-AMENDMENT-ORDER-2021.pdf"}
+      ]
+    },
+    {
+      "slug": "personal-data-protection",
+      "page": "https://www.agc.gov.bn/documents/personal-data-protection-order-2025/",
+      "editions": [
+        {"label": "S 1/2025", "url": "https://www.agc.gov.bn/wp-content/uploads/2026/07/S-1-2025-E-PERSONAL-DATA-PROTECTION-ORDER-2025.pdf"}
+      ],
+      "orders": []
+    }
+  ]
+}
