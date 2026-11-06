@@ -1,5 +1,7 @@
 # Brunei: law history in git (metadata only, no law text)
 
+Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Brunei's national law, which global-law reads at `brunei/national/acts/`.
+
 **This repository holds no law text.** The text of Brunei's laws is not published here because the Attorney General's Chambers site terms do not allow the laws to be republished and no permission or licence has been given. What is here is facts only, so the repository has something real in it and the history can grow when the laws can be added.
 
 It follows the shared design of [lexifina/global-law](https://github.com/lexifina/global-law): one file per unit, one commit per record on its day, and the record that made each change as the commit's author.
