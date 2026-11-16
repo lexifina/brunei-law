@@ -1,5 +1,9 @@
 # Brunei: law history in git
 
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="data/effort-dark.svg">
+<img alt="Bruneian law in this repository: what it holds, changes by the year they took effect, completeness against the official sources, and the correctness of what is held" src="data/effort-light.svg" width="880">
+</picture>
 
 Brunei's law as a git history, on the design every country here shares: one file per unit, one commit per version on the day it took effect, and the record that made each change as the commit's author. For now it holds no law text, only facts: Brunei's actions on treaties deposited with the UN, and facts about its legal system. `git blame` names the day's treaty actions behind every line; `git log` lists every action on a treaty; picking a date gives the record as it stood that day.
 
