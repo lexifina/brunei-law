@@ -59,6 +59,7 @@ Each day's treaty actions are credited to a record named for that day (`UN treat
 - `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before and compares it with the corpus, whose hash is in `data/corpus.sha256`; it also checks that every commit's trailers parse, that `main` has no merge commits and that no commit is dated in the future.
 - `tools/build.py` writes the history from that one corpus file, and the same corpus gives the same commit hashes. [`REPRODUCE.md`](REPRODUCE.md) records that the checks were not yet run for this build and that no second build has been compared.
 - Only facts are taken from the UN pages: each treaty file holds the treaty's name, where and when it was adopted, its depositary, Brunei's actions with their dates, and the page they came from.
+- [vulnerabilities/](vulnerabilities/): possible drafting mistakes in this law, found by global-law's detectors and checked by hand. Not run yet.
 
 ## What it does not show
 
@@ -79,6 +80,10 @@ Each day's treaty actions are credited to a record named for that day (`UN treat
 See [`LICENSE`](LICENSE). The Wikidata facts are CC0 1.0. From the UN Treaty Collection only facts are taken, the treaty names and the dates of treaty actions, credited to its status pages of multilateral treaties deposited with the Secretary-General. Lexifina's history, commit messages, tables and tools are CC0 1.0.
 
 No AI model wrote, translated or corrected legal text; the scripts were written by an AI model, and no model runs when the history is built (see [`REPRODUCE.md`](REPRODUCE.md)).
+
+## Visualisations
+
+- [visualisations/](visualisations/): charts drawn from this repository. Not drawn yet.
 
 ## More
 
