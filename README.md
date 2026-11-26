@@ -5,13 +5,13 @@
 <img alt="Bruneian law in this repository: what it holds, changes by the year they took effect, completeness against the official sources, and the correctness of what is held" src="data/effort-light.svg" width="880">
 </picture>
 
-Brunei's law as a git history, on the design every country here shares: one file per unit, one commit per version on the day it took effect, and the record that made each change as the commit's author. For now it holds no law text, only facts: Brunei's actions on treaties deposited with the UN, and facts about its legal system. `git blame` names the day's treaty actions behind every line; `git log` lists every action on a treaty; picking a date gives the record as it stood that day.
+Brunei's law as a git history, on the design every country here shares: one file per unit, one commit per version on the day it took effect, and the record that made each change as the commit's author. It holds the text of 92 Acts, Orders and subsidiary instruments taken from secondary copies (FAOLEX and WIPO Lex), Brunei's actions on treaties deposited with the UN, and facts about its legal system. `git blame` names the instrument or day's treaty actions behind every line; `git log` lists every action on a treaty; picking a date gives the record as it stood that day.
 
 Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Brunei's national law, which global-law reads at `brunei/national/acts/`.
 
-**What is in it now:** no law text. [`treaties/`](treaties/README.md) records Brunei's actions on 26 multilateral treaties deposited with the UN Secretary-General: 32 actions (19 accessions, 7 signatures and 6 ratifications) on 30 days from 5 December 1984 to 30 March 2020, one version per day. [`legal-system/`](legal-system/README.md) holds 13 files of facts about the state from Wikidata, such as its head of state, its legislative body and the three legal instruments Wikidata records, in one version; they are not law. [`REPRODUCE.md`](REPRODUCE.md) says how the files were made.
+**What is in it now:** 92 laws with text, 93 dated versions from 1999 to 2025, filed by type and year: [`acts/`](acts/) (20, including the Penal Code, Revised Edition 2001), [`orders/`](orders/) (12), [`amending-orders/`](amending-orders/) (24) and [`subsidiary/`](subsidiary/) (36), one file per instrument. The Constitution is not yet here (no copy with a dated version). [`treaties/`](treaties/README.md) records Brunei's actions on 26 multilateral treaties deposited with the UN Secretary-General: 32 actions (19 accessions, 7 signatures and 6 ratifications) on 30 days from 5 December 1984 to 30 March 2020, one version per day. [`legal-system/`](legal-system/README.md) holds 13 files of facts about the state from Wikidata, such as its head of state, its legislative body and the three legal instruments Wikidata records, in one version; they are not law. [`REPRODUCE.md`](REPRODUCE.md) says how the files were made.
 
-**Why there is no law text.** The Attorney General's Chambers publishes Brunei's laws at [agc.gov.bn](https://www.agc.gov.bn), but its Terms of Use (2.2) forbid reproducing or re-using its material without the Government's express written permission, and none has been given. The laws will be added if that changes.
+**Why the law text comes from secondary copies.** The Attorney General's Chambers publishes Brunei's laws at [agc.gov.bn](https://www.agc.gov.bn), but its Terms of Use (2.2) forbid reproducing or re-using its material without the Government's express written permission, and none has been given, so nothing is taken from agc.gov.bn. The texts here are the copies that FAOLEX (FAO) and WIPO Lex (WIPO) publish under their own terms; none of those copies carries a notice requiring the Government's permission. Each commit names its copy in a `Source-status: secondary copy (...)` trailer.
 
 Each treaty is one file named from its number in the UN Treaty Collection: `treaties/xxvii-7-d.md` is the Paris Agreement (XXVII-7-d).
 
@@ -50,6 +50,7 @@ Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local M
 Each commit is dated at noon, Asia/Brunei, and carries its day in its `In-force:` trailer:
 
 - for a treaty, the day the UN Treaty Collection records for Brunei's action (signature, ratification or accession). It is the day of the action, not the day the treaty came into force for Brunei;
+- for a law, the day it took effect: its own commencement clause, the "Commencement" line of its Revised Edition, the day printed on a Revised Edition ("REVISED EDITION 2001 (1st October 2001)"), or the entry-into-force date FAOLEX or WIPO Lex records, quoted in `In-force-basis`. An instrument with no commencement provision is dated by the Gazette that published it (`Date-basis: published`). A text with no reliable day is held back, not dated by guess;
 - for the Wikidata facts, which have no dated history, 30 October 2026, the day they were read, as the oldest version available. A date before that gives no facts.
 
 Each day's treaty actions are credited to a record named for that day (`UN treaty actions of 2016-09-21`), with an e-mail address that cannot exist; the Wikidata facts to the publisher, `Lexifina (compiled from Wikidata and the UN Treaty Collection)` (`Kind: publisher`). The committer is Lexifina.
@@ -63,7 +64,7 @@ Each day's treaty actions are credited to a record named for that day (`UN treat
 
 ## What it does not show
 
-- **Law text.** No Act, Order or Constitution, for the reason above; Wikidata's list of legal instruments records that three exist, not their text.
+- **Most law text.** Only the laws FAOLEX and WIPO Lex carry (mostly environment, agriculture, fisheries, shipping, health and intellectual property) are here, and of those only versions with a reliable in-force day; about 70 more copies are held for want of one, and no Constitution copy is dated. 69 of the 93 texts are the publisher's OCR of scanned Gazette prints and keep its misreadings.
 - **Most treaty actions.** Only a fixed list of about 60 multilateral treaties deposited with the UN Secretary-General was read; bilateral treaties and treaties deposited elsewhere are not here.
 - **Reservations, declarations and entry into force.** The treaty files give the dates of Brunei's actions only.
 - **A dated history of the facts.** Wikidata keeps none, and it can be incomplete or wrong.
@@ -74,10 +75,12 @@ Each day's treaty actions are credited to a record named for that day (`UN treat
 | --- | --- | --- | --- |
 | [United Nations Treaty Collection](https://treaties.un.org/) | Status pages of multilateral treaties deposited with the UN Secretary-General | yes, each action on its day | Facts only: treaty names and the dates of signature, ratification or accession; read on 30 October 2026 |
 | [Wikidata](https://www.wikidata.org/wiki/Q921) | Facts about the state (CC0), not law | no, one reading | Read on 30 October 2026 |
+| [FAOLEX](https://faolex.fao.org/) (FAO) | Secondary copies of Acts, Orders and regulations, as made and as revised | yes, where a record holds both | 70 versions; PDFs read on 26 November 2026 |
+| [WIPO Lex](https://www.wipo.int/wipolex/en/members/profile/BN) (WIPO) | Secondary copies of intellectual property and related laws | yes, where a record holds both | 23 versions; PDFs read on 26 November 2026 |
 
 ## Licence
 
-See [`LICENSE`](LICENSE). The Wikidata facts are CC0 1.0. From the UN Treaty Collection only facts are taken, the treaty names and the dates of treaty actions, credited to its status pages of multilateral treaties deposited with the Secretary-General. Lexifina's history, commit messages, tables and tools are CC0 1.0.
+See [`LICENSE`](LICENSE). The Wikidata facts are CC0 1.0. From the UN Treaty Collection only facts are taken, the treaty names and the dates of treaty actions, credited to its status pages of multilateral treaties deposited with the Secretary-General. The law texts are copies published by FAOLEX (FAO, reuse for non-commercial purposes with acknowledgement) and WIPO Lex (WIPO); each source's terms are in the LICENSE. Lexifina's history, commit messages, tables and tools are CC0 1.0.
 
 No AI model wrote, translated or corrected legal text; the scripts were written by an AI model, and no model runs when the history is built (see [`REPRODUCE.md`](REPRODUCE.md)).
 
