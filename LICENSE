@@ -1,18 +1,32 @@
-Facts and law texts in this repository come from four sources.
+Facts and law texts in this repository come from seven sources.
 
 Wikidata (https://www.wikidata.org/): CC0 1.0 Universal.
 
 United Nations Treaty Collection (https://treaties.un.org/): the treaty names and the dates of treaty actions are facts. No other text from the UN pages is reproduced. Source credit: United Nations Treaty Collection, status pages of multilateral treaties deposited with the Secretary-General.
 
 FAOLEX, the FAO legal database (https://faolex.fao.org/): the law texts marked "secondary copy (FAOLEX, ...)"
-in acts/, orders/, amending-orders/ and subsidiary/ are FAOLEX's copies. FAO terms
+in laws/, amending-orders/ and subsidiary/ are FAOLEX's copies. FAO terms
 (https://www.fao.org/contact-us/terms/): material may be copied, downloaded and printed for private study,
 research and teaching purposes, or for use in non-commercial products or services, provided that FAO is
 acknowledged as the source. Source credit: FAOLEX, Food and Agriculture Organization of the United Nations.
 
 WIPO Lex (https://www.wipo.int/wipolex/): the law texts marked "secondary copy (WIPO Lex, ...)" are WIPO Lex's
 copies of national laws, provided free of charge by WIPO. Source credit: WIPO Lex, World Intellectual
-Property Organization.
+Property Organization. The Constitution in constitution/ is WIPO Lex's copy of the reprint of 8 November 2008.
+
+AIPA Lync (https://aipalync.org/): the law texts marked "secondary copy (AIPA Lync, ...)" are the copies of
+Brunei national laws that the ASEAN Inter-Parliamentary Assembly publishes for free download; the site states
+no licence. Source credit: AIPA Lync, ASEAN Inter-Parliamentary Assembly.
+
+ADB Law and Policy Reform (https://lpr.adb.org/): the law texts marked "secondary copy (Asian Development Bank,
+...)" are the copies of Brunei laws in the Asian Development Bank's Law and Policy Reform repository, published
+for free download; the site footer reads "All Rights Reserved" for the site, and the law PDFs carry no notice.
+Source credit: Asian Development Bank, Law and Policy Reform Program.
+
+International Commission of Jurists (https://www.icj.org/): the law texts marked "secondary copy (International
+Commission of Jurists, ...)" are the copies of Brunei laws in the ICJ's SE Asia security law database, published
+for free download; the site footer reads "All Rights Reserved" for the site, and the law PDFs carry no notice.
+Source credit: International Commission of Jurists.
 
 The laws themselves are Brunei's. No text is taken from the Attorney General's Chambers site (agc.gov.bn),
 whose Terms of Use require written permission to reproduce its material; none of the copies used carries a

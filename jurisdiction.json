@@ -4,7 +4,7 @@
   "name": "Brunei",
   "level": "country",
   "repo": "https://github.com/lexifina/brunei-law",
-  "build": "built: metadata only, no law text (Wikidata facts, UN treaty actions)",
+  "build": "built: Constitution (2008 reprint) and 181 laws from secondary copies (FAOLEX, WIPO Lex, AIPA Lync, ADB, ICJ), plus Wikidata facts and UN treaty actions",
   "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
   "register_date": "2026-10-28"
 }
